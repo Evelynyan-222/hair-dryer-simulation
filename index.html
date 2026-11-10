@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Air Studio · Hair Dryer</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main data-speed="0">
+  <header><span class="eyebrow">AIR / STUDIO</span><span class="tag">Interactive simulation</span></header>
+  <h1>A little breeze. Your way.</h1>
+  <p class="subtitle">Power on, find your flow, and feel the difference.</p>
+  <div class="stage">
+    <svg viewBox="0 0 570 290" role="img" aria-label="An illustrated hair dryer with animated airflow when powered on">
+      <defs><linearGradient id="shell" x2="0" y2="1"><stop stop-color="#527e70"/><stop offset="1" stop-color="#31594d"/></linearGradient></defs>
+      <ellipse cx="280" cy="262" rx="115" ry="8" fill="#263c38" opacity=".07"/>
+      <path d="M270 230 Q266 255 292 266 L325 272" fill="none" stroke="#344940" stroke-width="6" stroke-linecap="round"/>
+      <path d="M245 135 L291 138 L288 230 Q268 245 250 229 Z" fill="url(#shell)" transform="rotate(-12 270 180)"/>
+      <path d="M212 66 Q186 66 186 103 L186 118 Q186 149 217 152 L326 142 L349 121 L349 86 L326 73 Z" fill="url(#shell)"/>
+      <path d="M325 74 L380 85 L380 128 L325 142 Z" fill="#29483f"/>
+      <rect x="374" y="85" width="9" height="43" rx="3" fill="#1e382f"/>
+      <ellipse cx="209" cy="108" rx="13" ry="30" fill="#23473d"/>
+      <path d="M206 88 v40 M212 87 v42 M200 94 v28" stroke="#6b9385" stroke-width="2"/>
+      <path d="M232 79 L312 84" stroke="#90b5a4" stroke-width="3" stroke-linecap="round" opacity=".5"/>
+      <rect x="260" y="172" width="9" height="22" rx="4" fill="#b9c8ae" transform="rotate(-12 260 172)"/>
+      <path class="wind" d="M399 88 H537 M399 107 H554 M399 126 H537"/>
+    </svg>
+  </div>
+  <div class="status"><div><span class="label">Current speed</span><strong id="state" role="status" aria-live="polite">Off</strong></div><div class="meter" aria-hidden="true"><i></i><i></i><i></i></div></div>
+  <div class="controls"><button id="power" type="button" aria-pressed="false">⏻ &nbsp; Power</button><button id="speed" type="button" disabled>≋ &nbsp; Speed</button></div>
+  <p class="hint">Power remembers your last speed · Speed cycles Low → Medium → High</p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
